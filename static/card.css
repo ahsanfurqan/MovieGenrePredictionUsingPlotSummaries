@@ -1,0 +1,99 @@
+.services{
+    /* background:transparent; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* height: 100vh; */
+
+}
+
+.services_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.services_card{
+    margin: 1rem;
+    height: 525px;
+    width: 340px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, 
+    rgba(0,0,0,0) 0%,
+    rgba(17,
+    17,17,0.6) 100%),url('/static/laughing.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+.services_card:nth-child(2){
+    background-image: linear-gradient(to bottom, 
+    rgba(0,0,0,0) 0%,
+    rgba(17,
+    17,17,0.6) 100%),url('/static/david.jpg');
+}
+.services_card:nth-child(3){
+    background-image:linear-gradient(to bottom, 
+    rgba(0,0,0,0) 0%,
+    rgba(17,
+    17,17,0.6) 100%),url('/static/kabristan.jpg');
+}
+
+.services_card:nth-child(4){
+    background-image:linear-gradient(to bottom, 
+    rgba(0,0,0,0) 0%,
+    rgba(17,
+    17,17,0.6) 100%),url('/static/fairgame.jpg');
+}
+.services h2{
+    position: absolute;
+    top: 400px !important;
+    left:30px;
+
+}
+.services_card p{
+    position: absolute;
+    top: 400px;
+    left:30px ;
+}
+.services_card button{
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #E50914;
+    position: absolute;
+    top: 460px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.services_card:hover,.services_card1:hover{
+
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+@media screen and(max-width:960px) {
+    .services{
+        height: 1600px;
+    }
+
+    .services h1{
+        font-size: 2rem;
+        margin-top:12rem;
+    }
+}
+
+@media screen and(max-width:480px) {
+    .services{
+        height:1400px ;
+    }
+    .services h1{
+        font-size: 1.2rem;
+    }
+    .services_card{
+        width: 300px;
+    }
+}
