@@ -1,0 +1,26 @@
+$(function() {
+    $('#summaries').click(function(e){
+        e.preventDefault()
+        $('html,body').animate({
+            scrollTop:$('#services').offset().top
+        },
+        'slow' 
+        )
+    })
+    $('#about').click(function(e){
+        e.preventDefault()
+        $('html,body').animate({
+            scrollTop:$('#footer').offset().top
+        },
+        'slow' 
+        )
+    })
+    $('#home').click(function(e){
+        e.preventDefault()
+        $('html,body').animate({
+            scrollTop:$('#header').offset().top
+        },
+        'slow' 
+        )
+    })
+})
